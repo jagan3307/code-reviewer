@@ -22,13 +22,39 @@ MAIN_CSS = """
     --border-glow: rgba(0, 212, 255, 0.3);
 }
 
-* { font-family: 'Syne', sans-serif !important; }
-code, pre, .stCode * { font-family: 'JetBrains Mono', monospace !important; }
-
-html, body, [data-testid="stAppViewContainer"] {
+html,
+body,
+.stApp,
+[data-testid="stAppViewContainer"] {
+    font-family: 'Syne', sans-serif;
     background: var(--bg-primary) !important;
     color: var(--text-primary) !important;
 }
+
+code,
+pre,
+.stCode *,
+.stTextArea textarea {
+    font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Fix Streamlit sidebar toggle icon */
+[data-testid="collapsedControl"] {
+    font-family: initial !important;
+}
+
+[data-testid="collapsedControl"] * {
+    font-family: initial !important;
+}
+
+button[kind="header"] {
+    font-family: initial !important;
+}
+
+[data-testid="collapsedControl"] svg {
+    display: block !important;
+}
+
 
 [data-testid="stSidebar"] {
     background: var(--bg-secondary) !important;
@@ -109,6 +135,8 @@ html, body, [data-testid="stAppViewContainer"] {
     text-align:center;
     padding:10px 0 20px 0;
 }
+
+
 
 .feature-title{
     font-size:28px;
