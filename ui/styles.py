@@ -104,6 +104,60 @@ html, body, [data-testid="stAppViewContainer"] {
     -webkit-text-fill-color: transparent;
     margin: 0 0 0.25rem 0;
 }
+/* Feature Section */
+.feature-header{
+    text-align:center;
+    padding:10px 0 20px 0;
+}
+
+.feature-title{
+    font-size:28px;
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:6px;
+}
+
+.feature-subtitle{
+    color:#94a3b8;
+    font-size:14px;
+}
+
+/* Professional Tabs */
+.stTabs [data-baseweb="tab-list"]{
+    gap:12px;
+    background:rgba(255,255,255,0.03);
+    padding:10px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.stTabs [data-baseweb="tab"]{
+    height:50px;
+    padding:0 20px;
+    border-radius:12px;
+    font-weight:600;
+    transition:all 0.3s ease;
+}
+
+.stTabs [aria-selected="true"]{
+    background:linear-gradient(
+        135deg,
+        rgba(124,58,237,0.95),
+        rgba(99,102,241,0.95)
+    ) !important;
+    color:white !important;
+}
+
+.stTabs [data-baseweb="tab"]:hover{
+    background:rgba(255,255,255,0.08);
+}
+
+/* Separation line */
+.feature-divider{
+    height:1px;
+    background:rgba(255,255,255,0.08);
+    margin:20px 0;
+}
 .hero-sub {
     color: var(--text-secondary);
     font-size: 0.95rem;
